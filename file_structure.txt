@@ -1,0 +1,100 @@
+payslip-system/
+├── 📁 app/
+│   ├── 📁 Config/
+│   │   ├── Database.php
+│   │   ├── Env.php
+│   │   └── Routes.php
+│   ├── 📁 Controllers/
+│   │   ├── AuthController.php
+│   │   ├── CompanyController.php
+│   │   ├── DashboardController.php
+│   │   ├── EmployeeController.php
+│   │   ├── PayrollController.php
+│   │   ├── PayslipController.php
+│   │   ├── ReportController.php
+│   │   └── SettingsController.php
+│   ├── 📁 Helpers/
+│   │   └── Encryption.php
+│   ├── 📁 Middleware/
+│   │   └── AuthMiddleware.php
+│   ├── 📁 Models/
+│   │   ├── Attendance.php
+│   │   ├── AuditLog.php
+│   │   ├── BaseModel.php
+│   │   ├── Department.php
+│   │   ├── Employee.php
+│   │   ├── EmployeeSalary.php
+│   │   ├── EmployeeSalaryComponent.php
+│   │   ├── LeaveRequest.php
+│   │   ├── Loan.php
+│   │   ├── PayrollItem.php
+│   │   ├── PayrollRun.php
+│   │   ├── Payslip.php
+│   │   ├── SalaryComponent.php
+│   │   ├── TaxRule.php
+│   │   └── User.php
+│   └── 📁 Services/
+│       └── PayrollService.php
+├── 📁 database/
+│   ├── 📁 migrations/
+│   │   ├── 001_create_companies_table.php
+│   │   ├── 002_create_users_table.php
+│   │   ├── 003_create_employees_table.php
+│   │   ├── 004_create_departments_table.php
+│   │   ├── 005_create_salary_components_table.php
+│   │   ├── 006_create_payroll_runs_table.php
+│   │   ├── 007_create_payroll_items_table.php
+│   │   ├── 008_create_payslips_table.php
+│   │   ├── 009_create_tax_rules_table.php
+│   │   ├── 010_create_employee_salary_table.php
+│   │   ├── 011_create_employee_salary_components_table.php
+│   │   ├── 012_create_loans_table.php
+│   │   ├── 013_create_audit_logs_table.php
+│   │   ├── 014_create_leave_requests_table.php
+│   │   └── 015_create_attendance_table.php
+│   ├── 📁 seeds/
+│   │   └── DatabaseSeeder.php
+│   ├── migrate.php
+│   └── seed.php
+├── 📁 docker/
+│   └── nginx.conf
+├── 📁 public/
+│   ├── 📁 assets/
+│   │   ├── 📁 css/
+│   │   │   └── app.css
+│   │   └── 📁 js/
+│   │       ├── api.js
+│   │       └── app.js
+│   └── index.php
+├── 📁 storage/
+│   ├── 📁 pdfs/
+│   ├── 📁 uploads/
+│   └── 📁 logs/
+├── 📁 templates/
+│   ├── 📁 auth/
+│   │   └── login.php
+│   ├── 📁 dashboard/
+│   │   ├── admin.php
+│   │   └── employee.php
+│   ├── 📁 employees/
+│   │   ├── index.php
+│   │   └── create.php
+│   ├── 📁 payroll/
+│   │   ├── index.php
+│   │   ├── create.php
+│   │   └── show.php
+│   ├── 📁 payslips/
+│   │   └── index.php
+│   ├── 📁 reports/
+│   │   └── index.php
+│   └── 📁 settings/
+│       └── company.php
+├── 📁 tests/
+│   └── PayrollCalculationTest.php
+├── .env
+├── .env.example
+├── composer.json
+├── docker-compose.yml
+├── Dockerfile
+├── README.md
+└── tailwind.config.js
